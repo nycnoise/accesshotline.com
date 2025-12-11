@@ -1,6 +1,6 @@
 # access hotline
 
-access hotline will eventually provide hella resources for describing access in your space, including sample language, translations, & more... but first we need to find out what help venues need & who is interested in helping out!
+Access Hotline will eventually provide hella resources for describing access in your space, including sample language, translations, & more––but first we need to find out what information venues are providing, what help they need, & what kinds of resources & expertise might be contributed by the community.
 
 ## VENUES
 
