@@ -1,5 +1,7 @@
 # access hotline
 
+access hotline will eventually provide hella resources for describing access in your space, including sample language, translations, & more... but first we need to find out what help venues need & who is interested in helping out!
+
 ## VENUES
 
 Fill out this [short form](https://tally.so/r/KYzMGg) to submit your venue's access links or to ask for help describing accessibility in your space.
