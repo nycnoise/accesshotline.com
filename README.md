@@ -14,7 +14,7 @@ Fill out this **[short form](https://tally.so/r/68LMyk)** to volunteer to help o
 
 ## NEAT THINGS
 
-Just adding a few for now, will keep adding; feel free to submit your own through the [Volunteer form](https://tally.so/r/68LMyk).
+A few for now, will keep adding; feel free to submit your own through the [Volunteer form](https://tally.so/r/68LMyk).
 
 • **[A.I.R. NYC](https://www.airnyc.club)** –– "a collective of disabled and chronically ill artists and organizers" + air purifier lending library
 
