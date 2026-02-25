@@ -1,31 +1,41 @@
+/* Fonts via: https://fontsource.org/fonts/open-sans/cdn */
 @font-face {
-  font-family: "Calibri";
-  src: url("/assets/calibri-regular.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300 800;
+  src: url("/assets/open-sans_5.2.7_latin-wght-normal.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 @font-face {
-  font-family: "Calibri";
-  src: url("/assets/calibri-bold.ttf") format("truetype");
-  font-weight: bold;
-}
-@font-face {
-  font-family: "Calibri";
-  src: url("/assets/calibri-italic.ttf") format("truetype");
-  font-weight: normal;
+  font-family: "Open Sans";
   font-style: italic;
+  font-display: swap;
+  font-weight: 300 800;
+  src: url("/assets/open-sans_5.2.7_latin-wght-italic.woff2") format("woff2-variations");
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
-@font-face {
-  font-family: "Calibri";
-  src: url("/assets/calibri-bold-italic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: bold;
+
+
+:root {
+  --bg-color: #FEFECB;
+  --text-color: #000;
 }
 
 
 body {
-  background: #FEFECB;
-  font-family: "Calibri", sans-serif;
+  background: var(--bg-color);
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
+  color: var(--text-color);
+  padding: 2vw;
+
+  @media screen and (min-width: 900px) {
+    font-size: 2vw;
+  }
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 p {
   line-height: 1.5;
@@ -37,7 +47,8 @@ a {
 }
 
 header, main, footer {
-  border-bottom: 1px solid #999;
+  border-bottom: 3px solid var(--text-color);
+  padding: 2vw 0;
 
 
   & > * {
@@ -45,31 +56,31 @@ header, main, footer {
     padding-right: 1rem;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     display: grid;
-    grid-template-columns: clamp(150px, 25%, 200px) 1fr;
+    grid-template-columns: 25vw 1fr;
     grid-template-rows: 1fr;
 
 
     & > * {
+      padding-left: 2rem;
+      padding-right: 2rem;
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
 
     & > *:first-child {
-      border-right: 1px solid #999;
+      border-right: 3px solid var(--text-color);
     }
   }
 }
 
 header {
-  border-top: 1px solid #999;
-  position: sticky;
-  top: 0;
-  background: #FEFECB;
+  border-top: 3px solid var(--text-color);
+  background: var(--bg-color);
 
-  @media screen and (min-width: 600px) {
-    height: 8rem;
+  @media screen and (min-width: 900px) {
+    height: 15vw;
   }
 
   & > div {
@@ -85,20 +96,20 @@ header {
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 600px) {
-      max-height: 8rem;
+    @media screen and (min-width: 900px) {
+      max-height: 15vw;
     }
   }
   .logo img {
     max-height: 4rem;
     aspect-ratio: 1 / 1;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       max-height: calc(100% - 2rem);
     }
   }
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 899px) {
     display: flex;
     padding: 0.5rem 1rem;
     gap: 1rem;
@@ -107,10 +118,11 @@ header {
       padding: 0;
     }
   }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 900px) {
     h1 {
-      font-size: 4rem;
+      font-size: 4em;
       margin: 1rem 0;
+      font-weight: 800;
     }
   }
 }
@@ -124,33 +136,36 @@ main {
 
   .sections-nav-content {
     h3 {
-      margin: 1rem 0;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-weight: 900;
     }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 900px) {
       position: sticky;
-      top: calc(10rem + 2px);
+      top: 2rem;
     }
   }
 
   #main-text {
     max-width: 65ch;
+    padding-top: 0;
   }
 
   li {
     margin: 1rem 0;
   }
 
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 899px) {
     nav.sections-nav {
       display: block;
-      border: 1px solid #999;
+      border: 3px solid var(--text-color);
       width: 240px;
       margin: 1rem;
       padding: 0;
       background: white;
 
       h3 {
-        border-bottom: 1px solid #999;
+        border-bottom: 3px solid var(--text-color);
         padding: 0.5rem 1rem;
         margin: 0;
       }
@@ -164,18 +179,19 @@ main {
   h2 {
     margin-top: 2em;
     margin-bottom: 0;
+    font-weight: 900;
   }
 }
 
 footer {
-  @media screen and (max-width: 599px) {
+  @media screen and (max-width: 899px) {
     padding: 2rem 0;
   }
 
-  @media screen and (min-width: 600px) {
-
+  @media screen and (min-width: 900px) {
+    text-align: center;
     div.footer-name {
-      text-align: center;
+      font-weight: 800;
     }
 
     & > div {
