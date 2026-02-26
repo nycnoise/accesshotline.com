@@ -16,7 +16,7 @@ Fill out the short **[volunteer form](https://tally.so/r/68LMyk)** to help out. 
 
 A few for now; feel free to submit more through the [volunteer form](https://tally.so/r/68LMyk).
 
-• "**[10 Principles of Disability Justice](https://sinsinvalid.org/10-principles-of-disability-justice/)**", from from Sins Invalid.
+• "**[10 Principles of Disability Justice](https://sinsinvalid.org/10-principles-of-disability-justice/)**", from Sins Invalid.
 
 • "**[Accessibility in the Arts:](https://promiseandpractice.art)** A Promise and a Practice" –– a publication by **Carolyn Lazard**, available as audio & text; excellent overview of accommodation recommendations, helpful tips, how to list access info, & resources.
 
