@@ -26,13 +26,9 @@
 body {
   background: var(--bg-color);
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: max(2vw, 18px);
   color: var(--text-color);
   padding: 2vw;
-
-  @media screen and (min-width: 900px) {
-    font-size: 2vw;
-  }
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
